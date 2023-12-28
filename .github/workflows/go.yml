@@ -26,6 +26,7 @@ jobs:
   
         - name: Go Build
           run: |
+            go mod tidy
             go build cmd/dfence.go
 
         - name: Go Tests
